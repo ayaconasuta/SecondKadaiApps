@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController2: UIViewController {
     @IBOutlet weak var label1: UILabel!
-    var text1: String?
+    var text1: String!
     
 
     override func viewDidLoad() {

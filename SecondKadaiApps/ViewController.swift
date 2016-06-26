@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let viewController2 = segue.destinationViewController as! ViewController2
-        viewController2.text1 = textField1.text
+        viewController2.text1 = textField1.text!
     }
 }
 

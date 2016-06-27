@@ -76,13 +76,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqb-O2-0tE">
-                                <rect key="frame" x="277" y="156" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="2po-xA-9bh"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6jq-wG-eRz">
+                                <rect key="frame" x="277" y="150" width="46" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SeK-ou-SYV">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QGN-9U-n1K">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqb-O2-0tE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <segue destination="BYZ-38-t0r" kind="show" id="2po-xA-9bh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hr-d2-OJn">
                                 <rect key="frame" x="0.0" y="70" width="600" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -93,11 +108,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6Hr-d2-OJn" firstAttribute="top" secondItem="rs7-3t-3VP" secondAttribute="bottom" constant="50" id="854-ue-huJ"/>
-                            <constraint firstItem="sqb-O2-0tE" firstAttribute="leading" secondItem="A5w-3W-MCf" secondAttribute="leading" constant="277" id="8jj-gC-2d1"/>
+                            <constraint firstItem="6jq-wG-eRz" firstAttribute="centerX" secondItem="A5w-3W-MCf" secondAttribute="centerX" id="EX7-5y-Ux0"/>
+                            <constraint firstItem="6jq-wG-eRz" firstAttribute="top" secondItem="A5w-3W-MCf" secondAttribute="topMargin" constant="150" id="G0Q-ds-d2N"/>
                             <constraint firstItem="6Hr-d2-OJn" firstAttribute="leading" secondItem="A5w-3W-MCf" secondAttribute="leading" id="V2u-wS-lrc"/>
                             <constraint firstAttribute="trailing" secondItem="6Hr-d2-OJn" secondAttribute="trailing" id="VQ1-Se-NRG"/>
-                            <constraint firstItem="sqb-O2-0tE" firstAttribute="top" secondItem="6Hr-d2-OJn" secondAttribute="bottom" constant="65" id="mIf-89-4zc"/>
-                            <constraint firstAttribute="trailing" secondItem="sqb-O2-0tE" secondAttribute="trailing" constant="277" id="xu2-bo-eza"/>
                         </constraints>
                     </view>
                     <connections>
